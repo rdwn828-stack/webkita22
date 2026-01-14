@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        /* Mengatur agar konten berada tepat di tengah layar */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000; /* Warna latar belakang hitam */
+            color: #fff;           /* Warna tulisan putih */
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .loading-text {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            /* Memanggil animasi kedap-kedip */
+            animation: blink 1s infinite;
+        }
+
+        /* Definisi animasi kedap-kedip */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loading-text">loading...</div>
+
+</body>
+</html>
